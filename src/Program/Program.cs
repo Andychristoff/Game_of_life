@@ -6,7 +6,8 @@ namespace PII_Game_Of_Life
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           bool[,] tablero= Importador.importatablero(@"../../assets/board.txt");
+           Impresortablero.impresortablero(tablero);
         }
     }
 }
